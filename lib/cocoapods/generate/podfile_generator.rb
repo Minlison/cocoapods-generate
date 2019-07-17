@@ -135,9 +135,19 @@ module Pod
           end
         end
       end
-
+      def recursive_subspecs_dependencies(spec)
+          dependencies = []
+          spec.recursive_subspecs.each do |subspec|
+            subspec.dependencies.each do |depency|
+              if ! "#{depency}".include? "#{spec.name}"
+                dependencies << depency
+              end
+            end
+          end
+          return dependencies
+      end
       def transitive_local_dependencies(spec, paths)
-        dependencies = spec.dependencies
+        dependencies = recursive_subspecs_dependencies(spec)
         return_list = []
         dependencies.each do |dependency|
           found_podspec_file = nil
