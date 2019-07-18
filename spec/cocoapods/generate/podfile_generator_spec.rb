@@ -130,7 +130,7 @@ RSpec.describe Pod::Generate::PodfileGenerator do
         project 'A.xcodeproj'
 
         plugin 'cocoapods-disable-podfile-validations', 'no_abstract_only_pods' => true
-        plugin 'cocoapods-generate'
+        plugin 'cocoapods-generate-minlison'
 
         install! 'cocoapods',
                  deterministic_uuids: false,
@@ -175,7 +175,7 @@ RSpec.describe Pod::Generate::PodfileGenerator do
           project 'A.xcodeproj'
 
           plugin 'cocoapods-disable-podfile-validations', 'no_abstract_only_pods' => true
-          plugin 'cocoapods-generate'
+          plugin 'cocoapods-generate-minlison'
           plugin 'plugin5', foo: { 'bar' => %w[3], 'baz' => %w[1 2] }, qux: '5'
 
           source 'https://github.com/CocoaPods/Specs.git'
@@ -228,7 +228,7 @@ RSpec.describe Pod::Generate::PodfileGenerator do
           project 'A.xcodeproj'
 
           plugin 'cocoapods-disable-podfile-validations', 'no_abstract_only_pods' => true
-          plugin 'cocoapods-generate'
+          plugin 'cocoapods-generate-minlison'
           plugin 'plugin-used'
 
           source 'https://github.com/CocoaPods/Specs.git'
@@ -290,7 +290,7 @@ RSpec.describe Pod::Generate::PodfileGenerator do
           project 'A.xcodeproj'
 
           plugin 'cocoapods-disable-podfile-validations', 'no_abstract_only_pods' => true
-          plugin 'cocoapods-generate'
+          plugin 'cocoapods-generate-minlison'
           plugin 'plugin-used'
 
           source 'https://github.com/CocoaPods/Specs.git'
@@ -350,7 +350,7 @@ RSpec.describe Pod::Generate::PodfileGenerator do
           project 'A.xcodeproj'
 
           plugin 'cocoapods-disable-podfile-validations', 'no_abstract_only_pods' => true
-          plugin 'cocoapods-generate'
+          plugin 'cocoapods-generate-minlison'
 
           source 'https://github.com/CocoaPods/Specs.git'
 
@@ -403,7 +403,7 @@ RSpec.describe Pod::Generate::PodfileGenerator do
           project 'A.xcodeproj'
 
           plugin 'cocoapods-disable-podfile-validations', 'no_abstract_only_pods' => true
-          plugin 'cocoapods-generate'
+          plugin 'cocoapods-generate-minlison'
 
           install! 'cocoapods',
                    deterministic_uuids: false,
@@ -454,7 +454,7 @@ RSpec.describe Pod::Generate::PodfileGenerator do
           project 'A.xcodeproj'
 
           plugin 'cocoapods-disable-podfile-validations', 'no_abstract_only_pods' => true
-          plugin 'cocoapods-generate'
+          plugin 'cocoapods-generate-minlison'
 
           install! 'cocoapods',
                    deterministic_uuids: false,

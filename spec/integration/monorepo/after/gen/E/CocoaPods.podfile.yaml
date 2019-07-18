@@ -13,7 +13,7 @@ sources:
 plugins:
   cocoapods-disable-podfile-validations:
     no_abstract_only_pods: true
-  cocoapods-generate:
+  cocoapods-generate-minlison:
     {}
 target_definitions:
   - abstract: true

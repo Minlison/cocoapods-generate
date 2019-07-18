@@ -35,7 +35,7 @@ module Pod
           project "#{spec.name}.xcodeproj"
           workspace "#{spec.name}.xcworkspace"
 
-          plugin 'cocoapods-generate'
+          plugin 'cocoapods-generate-minlison'
 
           install! 'cocoapods', generator.installation_options
 
